@@ -1,0 +1,28 @@
+@import 'mixins'
+
+.technologies
+    h2
+        @include title-mobile
+
+    .tech
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 10px
+        background-color: $tech-color
+
+        div
+            flex-basis: 15%
+
+            i
+                display: block
+                text-align: center
+                font-size: 40px
+        p
+            flex-basis: 80%
+
+    .tech:nth-child(odd)
+        flex-direction: row-reverse
+
+    .tech:nth-child(even)
+        flex-direction: row

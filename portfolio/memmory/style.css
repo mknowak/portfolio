@@ -1,0 +1,71 @@
+body {
+    background-image: url('img/tori-1976609_1920.jpg');
+    background-position: center;
+}
+
+header h1 {
+    margin: 10px auto;
+    text-align: center;
+    font-family: arial;
+    font-size: 24px;
+}
+
+.box {
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    width: 550px;
+    height: 40px;
+}
+
+.stopwatch {
+    flex-basis: 45%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-family: arial;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.table {
+    margin: 0 auto;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    width: 550px;
+    height: 444px;
+    border: 2px solid #ddd;
+}
+
+.tile {
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background-color: #444;
+    background-size: contain;
+}
+
+.tile:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+button {
+    display: block;
+    margin: 5px auto;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+    border: 2px solid #ccc;
+    background-color: #eee;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #222;
+    color: #ccc;
+    border-color: #222;
+}

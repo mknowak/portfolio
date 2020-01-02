@@ -1,0 +1,48 @@
+@import 'variables'
+@import 'animation'
+
+header
+    overflow: hidden
+    .title
+        height: 70vh
+        width: 100vw
+        overflow: hidden
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+        p
+            text-align: center
+            color: $example-color
+
+        p:nth-of-type(1)
+            font-size: 32px
+            font-weight: bolder
+
+        p:nth-of-type(2)
+            font-size: 22px
+            span
+                font-weight: bold
+                color: $main-color
+
+        .animation
+            position: absolute
+            overflow: hidden
+            height: 70vh
+            margin-top: 55vh
+            width: 100vw
+
+            div:nth-of-type(1)
+                height: 25px
+                background-color: $main-color
+                transform: translateX(-60%)
+
+            div:nth-of-type(2)
+                height: 25px
+                background-color: $main-color
+                transform: translateX(-30%)
+
+            div:nth-of-type(5)
+                height: 25px
+                background-color: $main-color
+                // transform: translateX(-%)

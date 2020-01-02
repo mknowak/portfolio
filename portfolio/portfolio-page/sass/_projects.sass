@@ -1,0 +1,35 @@
+@import 'mixins'
+@import 'variables'
+
+.projects
+    h2
+        @include title-mobile
+
+    .project
+        padding-bottom: 10px
+        .foto
+            min-height: 25vh
+            width: 100%
+            background-color: $example-color
+        .description
+            padding: 20px 20px 10px 20px
+            text-align: center
+            h3
+                margin: 20px 0
+                font-size: 22px
+                color: $example-color
+            p
+                color: $example-color
+            .sources
+                padding: 30px
+                a
+                    display: inline-block
+                    padding: 15px
+                    i
+                        font-size: 26px
+                        color: $example-color
+
+    .project:nth-child(odd)
+        background-color: $project-bcg
+    .project:nth-child(even)
+        background-color: $project-bcg-e
